@@ -26,89 +26,103 @@
 
 <section id="de" lang="de">
 <h1>Datenschutzerklärung</h1>
-<p class="meta">Green Wave Hamburg (Android-Paket com.fulltimeninja.greenwave) · Stand: 25.09.2026</p>
+<p class="meta">Green Wave Hamburg (Android und iOS, com.fulltimeninja.greenwave) · Stand: 09.10.2026</p>
 
 <h2>1. Verantwortlicher</h2>
 <p>Maximilian Taube (full time ninja), Hamburg, Deutschland<br>E-Mail: <a href="mailto:maximilian.taube00@gmail.com">maximilian.taube00@gmail.com</a></p>
 
 <h2>2. Kurzfassung</h2>
 <ul>
-  <li>Kein Benutzerkonto, keine Werbung, keine Analyse- oder Absturz-Tools, kein Tracking.</li>
-  <li>Der Entwickler betreibt keinen eigenen Server und erhält keine Daten von dir.</li>
-  <li>Dein Standort wird nur verwendet, solange die App geöffnet ist. Er wird nicht gespeichert.</li>
+  <li>Kein Benutzerkonto, keine Werbung, keine Analyse- oder Tracking-Dienste.</li>
+  <li>Dein Standort wird genutzt, während eine Fahrt läuft. Er wird nicht gespeichert, außer in Problemberichten.</li>
   <li>Um Ampeln, Straßen und Routen zu laden, fragt die App direkt bei den unten genannten Diensten an. Dabei werden deine IP-Adresse und teils ein Bereich um deinen Standort übertragen.</li>
+  <li>Problemberichte gehen an den Entwickler, wenn du sie sendest und automatisch, wenn in der App ein neuer Fehler auftritt. Sie enthalten deine Positionen der letzten 3 Minuten.</li>
 </ul>
 
 <h2>3. Standort</h2>
-<p>Die App nutzt den genauen Standort (GPS), um die nächste Ampel auf deiner Fahrspur zu finden und die passende Geschwindigkeit zu berechnen. Standortdaten werden nur im Arbeitsspeicher verarbeitet, solange die App im Vordergrund läuft, und nicht auf dem Gerät gespeichert oder aufgezeichnet. Die App fragt keinen Standortzugriff im Hintergrund an.</p>
+<p>Die App nutzt den genauen Standort (GPS), um die nächste Ampel auf deiner Fahrspur zu finden und die passende Geschwindigkeit zu berechnen. Standortdaten werden im Arbeitsspeicher verarbeitet. Die Positionen der letzten 3 Minuten hält die App dort für Problemberichte bereit, ältere werden verworfen.</p>
+<p>Im Hintergrund nutzt die App den Standort nur, solange eine Fahrt läuft und eine dieser Funktionen an ist: der Bildschirm im Auto (Android Auto), die schwebende Blase oder das Live Update (Android), die Live-Aktivität (iOS). Android zeigt dabei dauerhaft eine Benachrichtigung von Green Wave, iOS die Standortanzeige in der Statusleiste. Die App fragt nur nach Standortzugriff während der Nutzung, nicht nach „Immer erlauben“. Auf Android beendest du die App mit „Beenden“ in der Benachrichtigung.</p>
 
-<h2>4. Übertragungen an Dritte</h2>
+<h2>4. Übertragungen an Dienste für Ampeln, Straßen und Routen</h2>
 <p>Alle Verbindungen sind verschlüsselt (HTTPS bzw. WSS). Jeder Anbieter sieht technisch bedingt deine IP-Adresse.</p>
 <div class="wrap"><table>
 <tr><th>Dienst</th><th>Was übertragen wird</th><th>Zweck</th></tr>
 <tr><td>Urban Data Platform Hamburg, Freie und Hansestadt Hamburg (tld.iot.hamburg.de, api.hamburg.de, daten-hamburg.de)</td><td>Ein Rechteck von etwa einem Kilometer um deinen Standort, IDs der Ampeln in der Nähe, eine zufällige Verbindungs-ID</td><td>Ampeldaten und Live-Signalzustände (offene Daten)</td></tr>
-<tr><td>OpenStreetMap Overpass API (overpass-api.de, Ausweichserver overpass.kumi.systems)</td><td>Ein Rechteck um deinen Standort und einzelne Punkte auf deinem Weg</td><td>Straßenverlauf und Tempolimits</td></tr>
-<tr><td>Mapbox Inc., USA (api.mapbox.com), nur bei Nutzung der Zielsuche</td><td>Dein Suchbegriff und dein Standort (zur Sortierung nach Nähe), bei Routenwahl Start (dein Standort), Fahrtrichtung und Ziel</td><td>Orte finden und Route berechnen</td></tr>
+<tr><td>OpenStreetMap Overpass API (overpass-api.de, Ausweichserver maps.mail.ru von VK in Russland und overpass.kumi.systems)</td><td>Ein Rechteck um deinen Standort und einzelne Punkte auf deinem Weg. Die Ausweichserver werden nur gefragt, wenn overpass-api.de nicht antwortet.</td><td>Straßenverlauf und Tempolimits</td></tr>
+<tr><td>Mapbox Inc., USA (api.mapbox.com), nur bei Zielsuche und Routen</td><td>Dein Suchbegriff oder eine an die App geteilte Adresse und dein Standort (zur Sortierung nach Nähe), bei Routenwahl Start (dein Standort), Fahrtrichtung und Ziel</td><td>Orte finden und Route berechnen</td></tr>
 </table></div>
-<p>Mapbox kann Daten in Drittländern wie den USA verarbeiten. Dies erfolgt auf Grundlage des EU-US Data Privacy Framework bzw. von Standardvertragsklauseln. Es gelten zusätzlich die Datenschutzerklärungen der Anbieter: <a href="https://www.mapbox.com/legal/privacy">Mapbox</a>, <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap</a>, <a href="https://www.hamburg.de/datenschutz">Hamburg</a>.</p>
+<p>Mapbox kann Daten in Drittländern wie den USA verarbeiten. Dies erfolgt auf Grundlage des EU-US Data Privacy Framework bzw. von Standardvertragsklauseln. Für Russland besteht kein Angemessenheitsbeschluss der EU. Es gelten zusätzlich die Datenschutzerklärungen der Anbieter: <a href="https://www.mapbox.com/legal/privacy">Mapbox</a>, <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap</a>, <a href="https://www.hamburg.de/datenschutz">Hamburg</a>.</p>
 
-<h2>5. Lokal gespeicherte Daten</h2>
-<p>Auf dem Gerät werden nur Einstellungen gespeichert (Ansicht, Sprache, Mindestgeschwindigkeit, Standard-Tempolimit, Bildschirm anlassen, Demo-Fahrt und ähnliche Schalter). Sie enthalten keine Standorte und verlassen das Gerät nicht. Sie werden beim Löschen der App oder ihrer Daten entfernt. Suchbegriffe, Ziele und Routen werden nicht gespeichert.</p>
+<h2>5. Problemberichte</h2>
+<p>Ein Problembericht wird gesendet, wenn du während der Fahrt die Flagge tippst oder einen Bericht in der App sendest. Außerdem sendet die App automatisch einen Bericht, wenn ein neuer Fehler auftritt, höchstens einen alle 10 Minuten.</p>
+<p>Ein Bericht enthält: deine GPS-Positionen und Geschwindigkeit der letzten 3 Minuten, was die App in dieser Zeit angezeigt hat (Ampel, Fahrspur, Signal, Empfehlung), Ereignisse und Fehlermeldungen, die empfangenen Ampeldaten, deine App-Einstellungen, App-Version, Betriebssystem, Gerätemodell und Sprache, ein Bildschirmfoto des Fahrbildschirms der App und, wenn du sie angibst, Kategorie und Notiz. Er enthält keinen Namen, keine E-Mail-Adresse und keine Werbe-ID.</p>
+<p>Der Bericht geht verschlüsselt an einen Server des Entwicklers bei Cloudflare, Inc. (USA). Dieser speichert ihn nicht, sondern leitet ihn über den E-Mail-Dienst Resend (USA) an das Postfach des Entwicklers bei Microsoft (Outlook.com) weiter. Die Übermittlung in die USA erfolgt auf Grundlage des EU-US Data Privacy Framework bzw. von Standardvertragsklauseln. Es gelten zusätzlich die Datenschutzerklärungen von <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a>, <a href="https://resend.com/legal/privacy-policy">Resend</a> und <a href="https://privacy.microsoft.com/de-de/privacystatement">Microsoft</a>.</p>
+<p>Berichte werden nur genutzt, um Fehler zu finden und die Vorhersagen zu verbessern. Beim Entwickler werden sie gelöscht, sobald das Problem geklärt ist, spätestens nach 12 Monaten.</p>
 
-<h2>6. Rechtsgrundlage</h2>
-<p>Die Verarbeitung erfolgt, um die von dir gewünschte Funktion bereitzustellen (Art. 6 Abs. 1 lit. b DSGVO) sowie auf Grundlage deiner Einwilligung in den Standortzugriff (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG). Du kannst die Standortfreigabe jederzeit in den Systemeinstellungen widerrufen.</p>
+<h2>6. Lokal gespeicherte Daten</h2>
+<p>Auf dem Gerät werden deine Einstellungen gespeichert (Ansicht, Sprache, Mindestgeschwindigkeit, Standard-Tempolimit, Bildschirm anlassen, Demo-Fahrt und ähnliche Schalter). Sie enthalten keine Standorte und verlassen das Gerät nur als Teil eines Problemberichts. Problemberichte samt Positionen bleiben 7 Tage auf dem Gerät und werden dann gelöscht. Alles wird beim Löschen der App oder ihrer Daten entfernt. Suchbegriffe, Ziele und Routen werden nicht gespeichert.</p>
 
-<h2>7. Deine Rechte</h2>
-<p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch (Art. 15 bis 21 DSGVO). Da der Entwickler keine Daten von dir erhält, liegen dort in der Regel keine Daten vor. Wende dich für Daten bei den genannten Anbietern bitte an diese. Du kannst dich bei einer Aufsichtsbehörde beschweren, zum Beispiel beim Hamburgischen Beauftragten für Datenschutz und Informationsfreiheit.</p>
+<h2>7. Rechtsgrundlage</h2>
+<p>Die Verarbeitung erfolgt, um die von dir gewünschte Funktion bereitzustellen (Art. 6 Abs. 1 lit. b DSGVO) sowie auf Grundlage deiner Einwilligung in den Standortzugriff (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG). Du kannst die Standortfreigabe jederzeit in den Systemeinstellungen widerrufen. Berichte, die du selbst sendest, beruhen auf deiner Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Automatische Fehlerberichte beruhen auf dem berechtigten Interesse, Fehler in der App zu finden und zu beheben (Art. 6 Abs. 1 lit. f DSGVO). Du kannst dem per E-Mail widersprechen.</p>
 
-<h2>8. Kinder</h2>
+<h2>8. Deine Rechte</h2>
+<p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch (Art. 15 bis 21 DSGVO). Beim Entwickler liegen nur Problemberichte vor. Sie enthalten keinen Namen, nenne daher bitte Datum, Uhrzeit und ungefähren Ort, damit dein Bericht gefunden werden kann. Wende dich für Daten bei den genannten Anbietern bitte an diese. Du kannst dich bei einer Aufsichtsbehörde beschweren, zum Beispiel beim Hamburgischen Beauftragten für Datenschutz und Informationsfreiheit.</p>
+
+<h2>9. Kinder</h2>
 <p>Die App richtet sich an Autofahrer und nicht an Kinder.</p>
 
-<h2>9. Änderungen</h2>
+<h2>10. Änderungen</h2>
 <p>Bei Änderungen der App wird diese Erklärung angepasst. Es gilt die hier veröffentlichte Fassung.</p>
 </section>
 
 <section id="en" lang="en">
 <h1>Privacy Policy</h1>
-<p class="meta">Green Wave Hamburg (Android package com.fulltimeninja.greenwave) · Last updated: 2026-09-25</p>
+<p class="meta">Green Wave Hamburg (Android and iOS, com.fulltimeninja.greenwave) · Last updated: 2026-10-09</p>
 
 <h2>1. Controller</h2>
 <p>Maximilian Taube (full time ninja), Hamburg, Germany<br>Email: <a href="mailto:maximilian.taube00@gmail.com">maximilian.taube00@gmail.com</a></p>
 
 <h2>2. Summary</h2>
 <ul>
-  <li>No account, no ads, no analytics or crash reporting, no tracking.</li>
-  <li>The developer runs no server and receives no data from you.</li>
-  <li>Your location is used only while the app is open. It is not stored.</li>
+  <li>No account, no ads, no analytics or tracking services.</li>
+  <li>Your location is used while a drive runs. It is not stored, except in issue reports.</li>
   <li>To load traffic lights, roads and routes, the app contacts the services below directly. This sends your IP address and in part an area around your location.</li>
+  <li>Issue reports go to the developer when you send them and automatically when a new error occurs in the app. They contain your positions from the last 3 minutes.</li>
 </ul>
 
 <h2>3. Location</h2>
-<p>The app uses your precise location (GPS) to find the next traffic light on your lane and to work out the speed that reaches it on green. Location is processed in memory only while the app is in the foreground. It is not stored or recorded on the device. The app does not request background location.</p>
+<p>The app uses your precise location (GPS) to find the next traffic light on your lane and to work out the speed that reaches it on green. Location is processed in memory. The app keeps the positions of the last 3 minutes there for issue reports and discards older ones.</p>
+<p>In the background, the app uses your location only while a drive runs and one of these features is on: the car screen (Android Auto), the floating bubble or the Live Update (Android), the Live Activity (iOS). Android shows a persistent Green Wave notification meanwhile, iOS the location indicator in the status bar. The app only asks for location access while in use, not for "Allow all the time". On Android, "Close" in the notification ends the app.</p>
 
-<h2>4. Transfers to third parties</h2>
+<h2>4. Transfers to services for traffic lights, roads and routes</h2>
 <p>All connections are encrypted (HTTPS or WSS). Every provider technically sees your IP address.</p>
 <div class="wrap"><table>
 <tr><th>Service</th><th>What is sent</th><th>Purpose</th></tr>
 <tr><td>Urban Data Platform Hamburg, Free and Hanseatic City of Hamburg (tld.iot.hamburg.de, api.hamburg.de, daten-hamburg.de)</td><td>A rectangle of about one kilometer around your location, IDs of nearby traffic lights, a random connection ID</td><td>Traffic light data and live signal states (open data)</td></tr>
-<tr><td>OpenStreetMap Overpass API (overpass-api.de, fallback overpass.kumi.systems)</td><td>A rectangle around your location and single points along your way</td><td>Road layout and speed limits</td></tr>
-<tr><td>Mapbox Inc., USA (api.mapbox.com), only when you use destination search</td><td>Your search text and location (to sort by distance), and when you pick a route its start (your location), heading and destination</td><td>Finding places and calculating the route</td></tr>
+<tr><td>OpenStreetMap Overpass API (overpass-api.de, fallbacks maps.mail.ru run by VK in Russia and overpass.kumi.systems)</td><td>A rectangle around your location and single points along your way. The fallbacks are asked only when overpass-api.de does not answer.</td><td>Road layout and speed limits</td></tr>
+<tr><td>Mapbox Inc., USA (api.mapbox.com), only for destination search and routes</td><td>Your search text or an address shared to the app and your location (to sort by distance), and when you pick a route its start (your location), heading and destination</td><td>Finding places and calculating the route</td></tr>
 </table></div>
-<p>Mapbox may process data in third countries such as the USA, based on the EU-US Data Privacy Framework or standard contractual clauses. The providers' own policies also apply: <a href="https://www.mapbox.com/legal/privacy">Mapbox</a>, <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap</a>, <a href="https://www.hamburg.de/datenschutz">Hamburg</a>.</p>
+<p>Mapbox may process data in third countries such as the USA, based on the EU-US Data Privacy Framework or standard contractual clauses. There is no EU adequacy decision for Russia. The providers' own policies also apply: <a href="https://www.mapbox.com/legal/privacy">Mapbox</a>, <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap</a>, <a href="https://www.hamburg.de/datenschutz">Hamburg</a>.</p>
 
-<h2>5. Data stored on the device</h2>
-<p>Only settings are stored on the device (view, language, minimum speed, default speed limit, keep screen on, demo drive and similar switches). They contain no locations and never leave the device. They are removed when you uninstall the app or clear its data. Search queries, destinations and routes are not stored.</p>
+<h2>5. Issue reports</h2>
+<p>An issue report is sent when you tap the flag during a drive or send a report in the app. The app also sends a report on its own when a new error occurs, at most one every 10 minutes.</p>
+<p>A report contains: your GPS positions and speed over the last 3 minutes, what the app showed meanwhile (light, lane, signal, advice), events and error messages, the traffic light data received, your app settings, app version, operating system, device model and language, a screenshot of the app's drive screen and, if you add them, a category and a note. It contains no name, no email address and no advertising ID.</p>
+<p>The report goes encrypted to a server of the developer at Cloudflare, Inc. (USA). It does not store the report but forwards it through the email service Resend (USA) to the developer's mailbox at Microsoft (Outlook.com). Transfers to the USA are based on the EU-US Data Privacy Framework or standard contractual clauses. The policies of <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a>, <a href="https://resend.com/legal/privacy-policy">Resend</a> and <a href="https://privacy.microsoft.com/en-us/privacystatement">Microsoft</a> also apply.</p>
+<p>Reports are used only to find bugs and improve the predictions. The developer deletes them once the issue is resolved, at the latest after 12 months.</p>
 
-<h2>6. Legal basis</h2>
-<p>Processing is necessary to provide the feature you request (Art. 6(1)(b) GDPR) and is based on your consent to location access (Art. 6(1)(a) GDPR, Section 25(1) TDDDG). You can revoke location access at any time in the system settings.</p>
+<h2>6. Data stored on the device</h2>
+<p>Your settings are stored on the device (view, language, minimum speed, default speed limit, keep screen on, demo drive and similar switches). They contain no locations and leave the device only as part of an issue report. Issue reports, including their positions, stay on the device for 7 days and are then deleted. Everything is removed when you uninstall the app or clear its data. Search queries, destinations and routes are not stored.</p>
 
-<h2>7. Your rights</h2>
-<p>You have the right of access, rectification, erasure, restriction, data portability and objection (Art. 15 to 21 GDPR). The developer receives no data from you and therefore usually holds none. For data at the providers above, please contact them. You may lodge a complaint with a supervisory authority, for example the Hamburg Commissioner for Data Protection and Freedom of Information.</p>
+<h2>7. Legal basis</h2>
+<p>Processing is necessary to provide the feature you request (Art. 6(1)(b) GDPR) and is based on your consent to location access (Art. 6(1)(a) GDPR, Section 25(1) TDDDG). You can revoke location access at any time in the system settings. Reports you send yourself are based on your consent (Art. 6(1)(a) GDPR). Automatic error reports are based on the legitimate interest in finding and fixing bugs in the app (Art. 6(1)(f) GDPR). You can object to them by email.</p>
 
-<h2>8. Children</h2>
+<h2>8. Your rights</h2>
+<p>You have the right of access, rectification, erasure, restriction, data portability and objection (Art. 15 to 21 GDPR). The developer holds only issue reports. They contain no name, so please give the date, time and rough place so your report can be found. For data at the providers above, please contact them. You may lodge a complaint with a supervisory authority, for example the Hamburg Commissioner for Data Protection and Freedom of Information.</p>
+
+<h2>9. Children</h2>
 <p>The app is meant for drivers, not for children.</p>
 
-<h2>9. Changes</h2>
+<h2>10. Changes</h2>
 <p>This policy is updated when the app changes. The version published here applies.</p>
 </section>
 </main>
